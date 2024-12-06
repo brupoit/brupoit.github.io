@@ -1,0 +1,286 @@
+body {
+  background-color: #f6f5f5;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 95vh;
+  background-image: url("img/black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Estilo navegador */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  box-sizing: border-box;
+  color: #000000;
+}
+.logo {
+  font-family: Arial;
+  color: #000000;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+/* Estilo Textos */
+.conteudo-texto p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 22px;
+}
+
+.conteudo-texto p:nth-child(2) {
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000;
+  font-size: 50px;
+}
+
+.conteudo-texto p:nth-child(3) {
+  font-family: myriad pro regular;
+  color: #403e3e;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.conteudo-texto {
+  line-height: 10px;
+  margin: 45px 0px 25px;
+}
+
+.conteudo-texto {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+}
+
+/* Estilo Imagem banner sem fundo */
+
+.imgbg {
+  height: 490px;
+  position: absolute;
+  bottom: 40px;
+  left: 67%;
+  transform: translateX(-70%);
+}
+
+.conteudo-sobre {
+  width: 80%;
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Estilo Imagem Sobre eu */
+.conteudo-sobre img {
+  height: 250px;
+}
+
+.texto-sobre {
+  width: 550px;
+}
+
+.cotexto-sobre p:nth-child(1) {
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 0px;
+}
+
+.texto-sobre p:nth-child(2) {
+  color: #3e3e3e;
+  font-size: 30px;
+  font-family: myriad pro;
+  font-weight: bold;
+  line-height: 5px;
+}
+
+.texto-sobre p:nth-child(3),
+.texto-sobre p:nth-child(4) {
+  color: #7e7d7d;
+  font-family: calibri;
+  font-size: 15px;
+}
+
+.texto-sobre button {
+  width: 120px;
+  height: 40px;
+  color: #000000;
+  outline: none;
+  border: none;
+  font-family: calibri;
+  background-color: #262525;
+}
+
+/* Seção de Serviços  */
+
+.servicos {
+  height: 600px;
+  background-color: #000000;
+}
+
+.servicos-textos {
+  /* width: 500px; */
+  width: 50%;
+  margin: 50px 0px 0px 50px;
+}
+
+/*Contato*/
+.contact-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact {
+  background: url("img/city.png");
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.contact:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: %;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.contact-items h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.contact-items input[type="text"] {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 50%;
+}
+
+.contact-items textarea {
+  border-radius: 10px;
+  height: 150px;
+  padding: 15px;
+  width: 50%;
+}
+
+.contact-items a {
+  background: #4d1609;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 15px 80px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+#informacoes {
+  padding: 30px 0px;
+  height: 90%;
+  background: #000000;
+  color: #fff;
+}
+#informacoes h2 {
+  text-align: center;
+  font-size: 40px;
+}
+#informacoes ul {
+  margin: 40px 60px 20px 40px;
+}
+#informacoes li {
+  background: white;
+  grid-column: span 4;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10%;
+}
+
+#informacoes p {
+  text-align: left;
+  margin: 0 20px;
+  font-size: 1.2em;
+}
+
+.headid {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.detalhes {
+  font-size: 0.8em;
+  text-align: left;
+  margin: 10px 30px;
+  color: black;
+}
+
+.nome {
+  text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
