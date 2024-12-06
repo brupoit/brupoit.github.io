@@ -829,7 +829,28 @@
 
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
+		<script type='text/javascript'>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+   
+                embeddedservice_bootstrap.init(
+                    '00D4W000009En7O',
+                    'Auto_Pulse_Web_Deployment',
+                    'https://d4w000009en7ouas-dev-ed.develop.my.site.com/ESWAutoPulseWebDeploym1733498079640',
+                    {
+                        scrt2URL: 'https://d4w000009en7ouas-dev-ed.develop.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://d4w000009en7ouas-dev-ed.develop.my.site.com/ESWAutoPulseWebDeploym1733498079640/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
         
     </body>
+	
 	
 </html>
